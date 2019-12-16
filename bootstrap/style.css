@@ -1,0 +1,66 @@
+/* 整体字体 大小设置 */
+body{
+    font-size: 16px;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+
+/* 轮播图背景颜色 */
+.item{
+    background: rgba(245,245,245, 0.5);
+}
+
+/* 轮播图居中设置 */
+.item>img{
+    width: 1300px;
+    
+   margin: 0 auto ;
+}
+
+/* 导航条背景颜色 */
+.container-fluid{
+    background: rgb(236, 235, 215);
+}
+
+
+/* 头部导航条 间距设置 */
+.nav li{
+    margin: 0 20px;
+}
+
+.jumbotron h2,p{
+   text-align: center;
+}
+
+.jumbotron>h1{
+    text-align: center;
+}
+
+/* 左图右字 */
+.div1{
+    width: 100%;
+    height: 400px;
+    background: pink;
+    margin: 0 auto;
+   display: flex;
+   text-align: center;
+}
+
+
+/* 设置小屏幕时 */
+@media(min-width:768px) { 
+   
+}
+
+@media(min-width:992px) { 
+    .one{
+        width: 970px;
+    }
+}
+
+@media(min-width:1200px) { 
+    .one{
+        width: 1170px;
+    }
+}
+ 
+

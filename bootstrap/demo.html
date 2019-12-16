@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap 布局</title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+        <!-- 头部导航 -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">七月的你</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">如夏荷般<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">亭亭玉立</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 18岁的你 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">我为之着迷</a></li>
+                  <li><a href="#">一眼间</a></li>
+                  <li><a href="#">我竟不知这是人间还是地狱</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">这个世界很大</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">庆幸能与之相遇</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                  <!-- 搜索框 和确定按钮 -->
+                <!-- <input type="text" class="form-control" placeholder="Search"> -->
+              </div>
+              <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">活在梦里</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 睁眼有你 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+      
+        <!-- 轮播图 -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="http://pic.netbian.com/uploads/allimg/191107/000722-1573056442c446.jpg" alt="...">
+            <div class="carousel-caption">
+          
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://pic.netbian.com/uploads/allimg/180120/153703-15164338230e11.jpg" alt="...">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="http://pic.netbian.com/uploads/allimg/190608/122338-1559967818d12c.jpg" alt="...">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+
+          <div class="item">
+                <img src="http://pic.netbian.com/uploads/allimg/190902/155140-1567410700781e.jpg" alt="...">
+                <div class="carousel-caption">
+                 
+                </div>
+              </div>
+
+        </div>
+      
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <div class="jumbotron">
+        <h2>今天你快乐了吗?</h2>
+        <p>你需要我吗?</p>
+        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3NFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dc93ac4372dfca0c8efc7935c2bc53a5e27a2ed4/2.jpg" alt="...">
+            <div class="caption">
+              <h3>天马铸梦工厂</h3>
+              <p>市场调研、产品定位、品牌核心价值提炼、品牌个性与品牌形象塑造、营销传播方案等策略内容。品牌形象、视觉识别系统（VI）设计、产品包装、销售道具、广告宣传品等设计内容。品牌／产品命名、Slogan、品牌故事、广告主题、创意脚本、活动标题、推文、软文等文案内容</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2tFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--efb29d3ceb521b296f95e688a9d480e09f27f763/3.jpg" alt="...">
+              <div class="caption">
+                <h3>成就非凡的梦想</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iure nihil vitae suscipit vero dolore itaque eius. Natus, saepe iure. Repudiandae consectetur dolorem reprehenderit placeat obcaecati odio corporis quasi nisi!</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="http://www.meweidea.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ29FIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--885cce5012f229f14dc51fc0c47ce556d26214c1/1.jpg" alt="...">
+              <div class="caption">
+                <h3>造就不一样的人生</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iure nihil vitae suscipit vero dolore itaque eius. Natus, saepe iure. Repudiandae consectetur dolorem reprehenderit placeat obcaecati odio corporis quasi nisi!</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+     
+      <div class="jumbotron">
+          <h1> 人间丑陋
+              但你美好 </h1>
+          <p>纵有千里漫天雪，不及深情一句言</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+
+        <!-- 缩略图展示  -->
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576475544882&di=d90836e427afcfc0d8d80153baf29856&imgtype=0&src=http%3A%2F%2Fpics5.baidu.com%2Ffeed%2F4afbfbedab64034f8ba63979f250ae340b551dfb.jpeg%3Ftoken%3Dd5da6509eceb68a4f92b4e021f9a9aa4%26s%3DFD3A24D7C04B42FD16ADE8B803003063" alt="...">
+            </a>
+          </div>
+          
+
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576475544882&di=d90836e427afcfc0d8d80153baf29856&imgtype=0&src=http%3A%2F%2Fpics5.baidu.com%2Ffeed%2F4afbfbedab64034f8ba63979f250ae340b551dfb.jpeg%3Ftoken%3Dd5da6509eceb68a4f92b4e021f9a9aa4%26s%3DFD3A24D7C04B42FD16ADE8B803003063" alt="...">
+            </a>
+          </div>
+
+
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576475544882&di=d90836e427afcfc0d8d80153baf29856&imgtype=0&src=http%3A%2F%2Fpics5.baidu.com%2Ffeed%2F4afbfbedab64034f8ba63979f250ae340b551dfb.jpeg%3Ftoken%3Dd5da6509eceb68a4f92b4e021f9a9aa4%26s%3DFD3A24D7C04B42FD16ADE8B803003063" alt="...">
+            </a>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576475544882&di=d90836e427afcfc0d8d80153baf29856&imgtype=0&src=http%3A%2F%2Fpics5.baidu.com%2Ffeed%2F4afbfbedab64034f8ba63979f250ae340b551dfb.jpeg%3Ftoken%3Dd5da6509eceb68a4f92b4e021f9a9aa4%26s%3DFD3A24D7C04B42FD16ADE8B803003063" alt="...">
+            </a>
+          </div>
+        </div>
+
+        <!-- 媒体标签 -->
+       <!-- <div class="div1">
+          <div class="div2">
+              <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2750288591,3421250842&fm=173&app=25&f=JPEG?w=600&h=497&s=6FD34485DC2BCACC1639BC9A03000081" alt="">
+          </div>
+          <div class="div3">
+            红尘一醉，愿得一人心。烟火夫妻，白首不相离。弱水三千，我只取一瓢饮。红颜易逝，伊不离君不弃。相濡以沫，执子之手偕老。青色烟雨，孤影等你归来。
+          </div>
+
+       </div> -->
+
+       <style>
+          /* div{
+            border: 1px solid red;
+          } */
+       </style>
+       <div class="container">
+  
+          <div class="col-md-5" style="height: 308px;text-align: center;" > <img src="https://imgsa.baidu.com/forum/w%3D580/sign=5941fa233afae6cd0cb4ab693fb20f9e/027e31fae6cd7b89503b2197002442a7d8330ecc.jpg" alt="" style="height: 308px;"> </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-5" style="height: 308px;text-align: center; margin: 10px auto">  时间很短天涯很远。往后的一山一水一朝一夕，自己安静地走完。倘若不慎走失迷途，跌入水中也应记得有一条河流叫重生。这世上，任何地方，都可以生长；任何去处，都是归宿。那么，别来找我，我亦不去寻你。守着剩下的流年，看一段岁月静好，现世安稳。——白落梅《岁月静好现世安稳》既不回头，何必不忘。既然无缘，何须誓言。今日种种，似水无痕。明夕何夕，君已陌路。 </div>
+          
+          </div>
+
+          <div class="container">
+  
+              <div class="col-md-5" style="height: 308px;text-align: center;" > <img src="https://imgsa.baidu.com/forum/w%3D580/sign=682b0e80492309f7e76fad1a420e0c39/f6dd422309f79052bf435c2a03f3d7ca7bcbd53b.jpg" alt="" style="height: 308px;"> </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5" style="height: 308px;text-align: center;margin: 10px auto;">  一念花开，一念花落。这山长水远的人世，终究是要自己走下去。 红尘一醉，愿得一人心。烟火夫妻，白首不相离。弱水三千，我只取一瓢饮。红颜易逝，伊不离君不弃。相濡以沫，执子之手偕老。青色烟雨，孤影等你归来。长歌长，孤烟凉，枯骨许谁故地葬，风月心中藏；携天苍，泪千行，举杯与谁诉天长，倚楼天涯望。 </div>
+              
+              </div>
+
+              
+
+
+        <!-- 固定带底部的 导航 -->
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+             <p>我家的鹿 又惊了谁家的花园</p>
+            </div>
+          </nav>
+
+          
+          <!-- 尾页 -->
+          <div class="footer light" style="margin-top: 40px;">
+              <div class="container">
+                  <div class="row">
+          
+                      <div class="col-sm-6 col-md-3 item">
+                          <div class="title-h4">Customer support</div>
+                          <nav>
+                              <ul>
+                                  <li>
+                                      <a href="tel:+14158002960">+1 (415) 800-2960</a>
+                                  </li>
+                                  <li>
+                                      <script type="text/javascript">
+                                          (function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.async=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+                                          '//support.sendpulse.com/scripts/track.js',
+                                          function(e){ LiveAgent.createButton('c1fd2942', e); });
+                                      </script><div id="b_c1fd2942_434" class="b_c1fd2942_434-animate" style="cursor: pointer;"> <div>Ask a question</div></div>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/en/support" target="_blank">Customer support</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/knowledge-base" target="_blank">Knowledge Base</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/support/glossary" target="_blank">Glossary</a>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                     
+          
+                      <div class="col-sm-6 col-md-3 item">
+                          <div class="title-h4">Integrations</div>
+                          <nav>
+                              <ul>
+                                  <li>
+                                      <a href="https://sendpulse.com/en/integrations/api" target="_blank">API</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/en/integrations/other-integrations/zapier" target="_blank">Zapier</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/en/integrations/cms/wordpress" target="_blank">Wordpress</a>
+                                  </li>
+          
+                                  <li>
+                                      <a href="https://sendpulse.com/integrations/ecommerce/woocommerce" target="_blank">WooCommerce</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/integrations/other-integrations/typeform" target="_blank">Typeform</a>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <!-- end .item -->
+          
+                      <div class="col-sm-6 col-md-3 item">
+                          <div class="title-h4">Products</div>
+                          <nav>
+                              <ul>
+                                  <li>
+                                      <a href="https://sendpulse.com/en/features/email" target="_blank">Email Service</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/en/features/smtp" target="_blank">SMTP Server</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://sendpulse.com/en/features/webpush" target="_blank">Web Push Notifications</a>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <!-- end .item -->
+          
+                      <div class="col-sm-6 col-md-3 item">
+          
+                          <div class="apps">
+                              <div class="title-h4">Applications</div>
+                              <a href="http://itunes.apple.com/app/id945711525" target="_blank" title="iTunes" class="icon"> </a>
+                              <a href="https://play.google.com/store/apps/details?id=com.sendpulse.sendpulse" target="_blank" title="Android" class="icon"> </a>
+                          </div>
+                          <!-- end .apps -->
+          
+                          <div class="social">
+                              <div class="title-h4">Social</div>
+                              <a href="https://facebook.com/SendPulse" target="_blank" title="Facebok" class="icon"> </a>
+                              <a href="https://twitter.com/SendPulseCom" target="_blank" title="Twitter" class="icon"> </a>
+                              <a href="https://plus.google.com/+Sendpulse" target="_blank" title="Google Plus" class="icon"> </a>
+                              <a href="https://www.linkedin.com/company/sendpulse" target="_blank" title="LinkedIn" class="icon"> </a>
+                              <a href="https://sendpulse.com/blog/feed" target="_blank" title="Rss" class="icon"> </a>
+                          </div>
+                          <!-- end .social -->
+                          <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                      </div>
+                      <!-- end .item -->
+          
+                  </div>
+              </div>
+          </div>
+          
+          <div class="copyright light" style="margin: 50px auto; text-align: right;">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-12">
+                          © 2019 12 16 那天雪下得真没你的笑美 <span class="glyphicon glyphicon-send"></span> ®
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+</body>
+</html>
